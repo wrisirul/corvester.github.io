@@ -22,17 +22,28 @@
       margin: 0;
       padding: 0;
       font-family: 'default';
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      /* Remove default.png as background from body */
+    }
+
+    .default.theme {
       background-image: url('default.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       image-rendering: pixelated;
+      width: 100%;
+      padding: 20px;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
       display: flex;
       flex-direction: column;
       align-items: center;
-      text-align: center;
-      color: white;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
 
     .banner {
@@ -114,8 +125,8 @@
     }
 
     .music {
-      background-image: url('music.png');
-      font-family: 'music';
+      background-image: url('default.png');
+      font-family: 'default';
     }
 
     audio {
@@ -130,51 +141,53 @@
   </style>
 </head>
 <body>
-  <img src="banner.png" alt="Banner" class="banner" />
-  <div class="site-container">
-    <h1>Quick About me:</h1>
-    <ul>
-      <li>he/him, gay, amab, cisgender</li>
-      <li>linguistics and history nerd, weird al fan</li>
-      <li>atheist</li>
-    </ul>
-
-    <section>
-      <h1>Interests:</h1>
+  <section class="default theme">
+    <img src="banner.png" alt="Banner" class="banner" />
+    <div class="site-container">
+      <h1>Quick About me:</h1>
       <ul>
-        <li>Gaming</li>
-        <li>Coding</li>
-        <li>Machine Learning</li>
-        <li>Linguistics</li>
-        <li>Crossdressing</li>
+        <li>he/him, gay, amab, cisgender</li>
+        <li>linguistics and history nerd, weird al fan</li>
+        <li>atheist</li>
       </ul>
 
-      <h1>Games I Like:</h1>
-      <ul>
-        <li>Minecraft</li>
-        <li>People Playground</li>
-        <li>Friday Night Funkin</li>
-        <li>Sonic The Hedgehog Franchise</li>
-        <li>Soup 0.9</li>
-      </ul>
+      <section>
+        <h1>Interests:</h1>
+        <ul>
+          <li>Gaming</li>
+          <li>Coding</li>
+          <li>Machine Learning</li>
+          <li>Linguistics</li>
+          <li>Crossdressing</li>
+        </ul>
 
-      <h1>Coding Languages:</h1>
-      <ul>
-        <li>HTML, JavaScript & CSS</li>
-        <li>Python</li>
-        <li>Java</li>
-        <li>C#</li>
-      </ul>
+        <h1>Games I Like:</h1>
+        <ul>
+          <li>Minecraft</li>
+          <li>People Playground</li>
+          <li>Friday Night Funkin</li>
+          <li>Sonic The Hedgehog Franchise</li>
+          <li>Soup 0.9</li>
+        </ul>
 
-      <h1>Linguistics I Like:</h1>
-      <ul>
-        <li>Learning Languages</li>
-        <li>Reconstructed Languages</li>
-        <li>Etymology</li>
-        <li>Conlanging</li>
-      </ul>
-    </section>
-  </div>
+        <h1>Coding Languages:</h1>
+        <ul>
+          <li>HTML, JavaScript & CSS</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>C#</li>
+        </ul>
+
+        <h1>Linguistics I Like:</h1>
+        <ul>
+          <li>Learning Languages</li>
+          <li>Reconstructed Languages</li>
+          <li>Etymology</li>
+          <li>Conlanging</li>
+        </ul>
+      </section>
+    </div>
+  </section>
 
   <section class="minecraft theme">
     <h2>Minecraft</h2>
